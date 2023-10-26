@@ -5,8 +5,8 @@
 #include <stdlib.h>
 
 typedef uint32_t data_t;
-const int U = 10000000;   // size of the array. 10 million vals ~= 40MB
-const int N = 100000000;  // number of searches to perform (100 million)
+const int U = 2 * 64 * 64;   // size of the array. 10 million vals ~= 40MB
+const int N = 100000;  // number of searches to perform (100 million)
 
 int main() {
   data_t* data = (data_t*) malloc(U * sizeof(data_t));
